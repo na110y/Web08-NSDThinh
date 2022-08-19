@@ -21,11 +21,11 @@ body (Tùy chọn)
 1. Type:
 
 
-feat - Một tính năng mới (feature)
+feat - Một tính năng mới (feature) ( Sử dụng )
 
-fix - Fix một bug
+fix - Fix một bug  ( Sử dụng )
 
-docs - Thay đổi tài liệu
+docs - Thay đổi tài liệu  ( Sử dụng )
 
 style - Mọi thứ liên quan tới style
 
