@@ -1,0 +1,20 @@
+// employee btn add
+// author: Nguyễn Sỹ Đức Thịnh ( 29/08/2022 )
+
+.content__employee-add {
+  background-color: #019160;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:focus {
+    background-color: #2fbe8e;
+  }
+  #btn__employee-add {
+  }
+  .btn__employee-txt {
+    color: #fff;
+    font-size: 14px;
+  }
+}

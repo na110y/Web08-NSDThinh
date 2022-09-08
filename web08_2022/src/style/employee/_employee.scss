@@ -1,0 +1,46 @@
+@import "../base/btn-add";
+@import "../base/btn-refresh";
+@import "../base/input-search";
+@import "../base/btn-down";
+// employee
+// author: Nguyễn Sỹ Đức Thịnh ( 29/08/2022 )
+.content {
+  float: right;
+  width: calc(100% - 251px);
+  background-color: #eee;
+  &__employee {
+    padding: 0 20px;
+    margin-top: 15px;
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      .content__employee-txt {
+        font-family: "googlesans-black";
+        font-size: 20px;
+      }
+    }
+  }
+}
+#customers {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.employee__content {
+  background: #fff;
+  margin-top: 15px;
+}

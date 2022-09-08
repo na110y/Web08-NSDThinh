@@ -1,0 +1,40 @@
+// components header
+// author: Nguyễn Sỹ Đức Thịnh ( 29/08/2022 )
+
+.header {
+  float: left;
+  width: calc(100% - 301px);
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  &-avata {
+    width: 20px;
+    height: 20px;
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+    background: url(../../pages/img/Sprites.64af8f61.svg) no-repeat -316px -37px;
+  }
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    &-txt {
+      font-family: "googlesans-medium";
+    }
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    &-avata img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    &-txt {
+      margin-right: 15px;
+    }
+  }
+}

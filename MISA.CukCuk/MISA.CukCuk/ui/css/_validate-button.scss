@@ -1,0 +1,48 @@
+﻿.btn--green {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    background-color: #50B83C;
+    color: #fff;
+    cursor: pointer;
+    min-width: 100px;
+    outline: none;
+    opacity: 1;
+    font-family: Notosans Bold;
+}
+
+.btn--green:disabled {
+    opacity: 0.7;
+}
+
+.btn--green:hover {
+    background-color: #73C663;
+}
+
+.btn--green:active {
+    background-color: #089740;
+}
+
+.btn--white {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: 1px solid #9E9E9E;
+    text-align: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    min-width: 100px;
+    outline: none;
+    opacity: 1;
+}
+
+.btn--white:hover {
+    background-color: #F5F5F5;
+}
+
+.btn--white:active {
+    background-color:#E0E0E0;
+}

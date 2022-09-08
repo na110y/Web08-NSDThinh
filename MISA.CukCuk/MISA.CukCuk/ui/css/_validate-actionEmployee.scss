@@ -1,0 +1,40 @@
+﻿@import "_validate-responsive.scss";
+
+.actionEmployee {
+    /*    position: absolute;
+    top: 260px;
+    right: 60px;*/
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    margin-bottom:5px;
+    .nhanban {
+        padding: 5px 15px;
+
+        &:hover {
+            color: #60cf6e;
+            background-color: #e8e9ec;
+            cursor: pointer;
+        }
+    }
+
+    .xoa {
+        padding: 10px;
+
+        &:hover {
+            color: #60cf6e;
+            background-color: #e8e9ec;
+            cursor: pointer;
+        }
+    }
+
+    .ngungsudung {
+        padding: 10px;
+
+        &:hover {
+            color: #60cf6e;
+            background-color: #e8e9ec;
+            cursor: pointer;
+        }
+    }
+}

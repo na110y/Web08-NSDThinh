@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Employee</title>
+    <link href="../css/app.min.css" rel="stylesheet" />
+    <link href="../../fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <div class=" menu ">
+        <ul class="menu-list ">
+            <li class="menu-list-itemlogo">
+                <div class="menu-list-itemlogo_icon" id="menu-icon">
+                </div>
+                <div class="menu-list-itemlogo_logo">
+                    <img src="../../img/favicon.ico" id="menu-logo" />
+                    <div class="menu-txt">KẾ TOÁN</div>
+                </div>
+            </li>
+            <li class="menu-list-itemTxt">
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon1"></div>
+                    <div class="menu-item_txt">Tổng quan</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon2"></div>
+                    <div class="menu-item_txt">Tiền mặt</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon3"></div>
+                    <div class="menu-item_txt">Tiền gửi</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon4"></div>
+                    <div class="menu-item_txt">Mua hàng</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon5"></div>
+                    <div class="menu-item_txt">Quản lý hóa đơn</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon6"></div>
+                    <div class="menu-item_txt">Kho</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon7"></div>
+                    <div class="menu-item_txt">Công cụ sử dụng</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon8"> </div>
+                    <div class="menu-item_txt">Tài sản cố định</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon9"> </div>
+                    <div class="menu-item_txt">Thuế</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon10"></div>
+                    <div class="menu-item_txt">Giá Thành</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon11"> </div>
+                    <div class="menu-item_txt">Tổng hợp</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon12"> </div>
+                    <div class="menu-item_txt">Ngân sách</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon13"></div>
+                    <div class="menu-item_txt">Báo cáo</div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon14"></div>
+                    <div class="menu-item_txt">Phân tích tài chính</div>
+                </div>
+
+
+            </li>
+        </ul>
+        <i class="fa-solid fa-xmark " id="closeRepon"></i>
+
+    </div>
+    <div class="content contentActive">
+        <div class="content-header">
+            <div class="content-header-TXT">
+                <i class="fa-solid fa-bars" id="iconHeader"></i>
+                <div class="content-header_TXT">
+                    <div class="content-TXT">CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC </div>
+                    <img src="../icon/dixuong.png" id="dichuyen" />
+                </div>
+
+            </div>
+            <div class="content-header-user">
+                <img src="../icon/chuong.png" id="chuong" />
+                <div class="user-icon">
+                    <img src="../icon/user.png" id="userIcon" />
+                    <div class="userTXT">
+                        <div class="userTXT-txt">Nguyễn Sỹ Đức Thịnh</div>
+                        <img src="../icon/dixuong.png" id="user-dichuyen" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-between">
+            <div class="employeee">
+                <div class="content-between_TXT">Nhân viên</div>
+                <div class="addNV">Thêm mới nhân viên</div>
+            </div>
+
+
+            <div class="content-firl">
+
+                <div class="content-search">
+                    <div class="searchUser">
+                        <div class="search">
+                            <input name="name" placeholder="tìm theo mã,tên nhân viên" id="inputNV" />
+                            <img src="../icon/search.png" id="searchNV" />
+                        </div>
+                        <img src="../icon/rset.png" id="rset" />
+                    </div>
+                    <!--                    <div class="actionEmployee">
+                                            <img src="../icon/duplicate.png" id="nhanban" />
+                                            <img src="../icon/delete.png" id="delete" />
+                                        </div>-->
+                </div>
+
+
+                <div class="employeeTablee">
+
+                    <table id="employee">
+                        <thead>
+                            <tr>
+                                <th class="checkbox">
+                                    <input type="checkbox" id="weekday-1" name="weekday-1" value="Friday" checked>
+                                    <label for="weekday-1"></label>
+                                </th>
+                                <th class="col" prop-name="EmployeeCode"> MÃ NHÂN VIÊN</th>
+                                <th class="col" prop-name="EmployeeName">TÊN NHÂN VIÊN</th>
+                                <th class="col" prop-name="checkGender" format-gender>GIỚI TÍNH</th>
+                                <th id="Dateofbirth" prop-name="DateOfBirth" format-date>NGÀY SINH</th>
+                                <th class="col" prop-name="IdentityNumber">SỐ CMND</th>
+                                <th class="col" prop-name="DepartmentName">CHỨC DANH</th>
+                                <th class="col styleCol" prop-name="PositionName">TÊN ĐƠN VỊ</th>
+                                <th class="col colRepon" prop-name="BankAccount">SỐ TÀI KHOẢN</th>
+                                <th class="col colRepon" prop-name="NameBankAccount">TÊN NGÂN HÀNG</th>
+                                <th class="col colRepon" prop-name="branch">CHI NHÁNH TK NGÂN HÀNG</th>
+                                <th id="function">CHỨC NĂNG</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="#emplBody">
+                            <tr>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+
+            </div>
+            <div class="content-end">
+                <div class="total">
+                    <div class="total-item1">Tổng số:</div>
+                    <div class="total-item2">1035</div>
+                    <div class="total-item3">bản ghi</div>
+                </div>
+                <div class="number">
+                    <div class="list-number" id="showListNumber">
+                        <div class="number-item1" value="20">20 bản ghi trên 1 trang</div>
+
+                        <div class="list-paging">
+                            <div class="item-paging" value="10">10 bản ghi trên 1 trang</div>
+                            <div class="item-paging" value="30">30 bản ghi trên 1 trang</div>
+                            <div class="item-paging" value="50">50 bản ghi trên 1 trang</div>
+                            <div class="item-paging" value="100">100 bản ghi trên 1 trang</div>
+                        </div>
+
+                    </div>
+                    <img src="../icon/end.png" id="endtable" />
+                    <div class="number-item2">Trước</div>
+                    <div class="number-item3">1</div>
+                    <div class="number-item4"> 2 </div>
+                    <div class="number-item5">3</div>
+                    <div class="number-item6">...</div>
+                    <div class="number-item7">52</div>
+                    <div class="number-item8">Sau</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- form thêm nhân viên -->
+    <div class="formadd ">
+        <div class="infoTXT">
+            <div class="infoTXT-list">
+                <div class="infoTXT-list_item">
+                    <div class="NVTXT">THÔNG TIN NHÂN VIÊN</div>
+                    <div class="infoTXT-list_item">
+                        <input type="checkbox" id="weekday-2" name="weekday-1" value="Friday" checked>
+                        <label for="weekday-2"> Là khách hàng</label>
+                    </div>
+                    <div class="infoTXT-list_item">
+                        <input type="checkbox" id="weekday-3" name="weekday-1" value="Friday" checked>
+                        <label for="weekday-3"> Là nhà cung cấp</label>
+                    </div>
+                </div>
+                <div class="close">
+                    <img src="../icon/iconhoi.png" id="iconhoi" />
+                    <img src="../icon/iconclose.png" id="iconClose" />
+                </div>
+            </div>
+
+
+            <div class="information">
+                <div class="information">
+                    <ul class="information-list">
+                        <li class="information-list_item">
+                            <div class="item-list">
+                                <label for="item1">Mã (*)</label>
+                                <input type="text" name="manv" placeholder="NV-1644" id="manv" />
+                            </div>
+                            <div class="item-list">
+                                <label for="item1">Tên (*)</label>
+                                <input type="text" name="name" placeholder="Nguyễn Anh Bằng" id="tennv" />
+                            </div>
+                            <div class="item-list">
+                                <label for="ngaysinh">Ngày Sinh</label>
+                                <input type="datetime" placeholder="12/16/1980" id="ngaysinh" />
+                            </div>
+                            <div class="item-list">
+                                <label id="gender">Giới Tính</label>
+                                <div class="item-list-col">
+
+                                    <div class="itemm">
+                                        <input type="radio" id="nam" name="radioGroup" value="1">
+                                        <label for="nam">Nam</label>
+                                    </div>
+                                    <div class="itemm">
+                                        <input type="radio" id="nu" name="radioGroup" value="0">
+                                        <label for="nu">Nữ</label>
+                                    </div>
+                                    <div class="itemm">
+                                        <input type="radio" id="khac" name="radioGroup" value="2">
+                                        <label for="khac">khác</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="information-list_item">
+                            <div class="item-list1 itemdonvi">
+                                <label for="donvi1">Đơn vị (*) </label>
+                                <input type="text" name="donvi1" placeholder="Phòng nhân sự" id="donvi1" />
+                            </div>
+                            <div class="item-list1">
+                                <label for="cmnd">Số CMND </label>
+                                <input type="text" name="cmnd" value="" placeholder="6013758468" id="cmnd" />
+                            </div>
+                            <div class="item-list1 itemngaycap">
+                                <label for="ngaycap">Ngày Cấp </label>
+                                <input name="ngaycap" value="" placeholder="11/01/1986" id="ngaycap" />
+                                <img src="../icon/date.png" id="datet" />
+                            </div>
+                        </li>
+                        <li class="information-list_item col2">
+                            <div class="item-list ">
+                                <label for="chucdanh">Chức danh </label>
+                                <input type="text" name="chucdanh" value="" placeholder="Lễ tân chính" id="chucdanh" />
+                            </div>
+                            <div class="item-list">
+                                <label for="noicap">Nơi cấp </label>
+                                <input type="text" name="noicap" value="" placeholder="Hải phòng" id="noicap" />
+                            </div>
+
+                        </li>
+                        <li class="information-list_item col3">
+                            <div class="item-list ">
+                                <label for="diachi">Địa chỉ </label>
+                                <input type="text" name="diachi" value="" placeholder="146 phạm văn chiêu" id="diachi" />
+                            </div>
+
+                        </li>
+                        <li class="information-list_item">
+                            <div class="item-list1 ">
+                                <label for="dtdidong">ĐT di động </label>
+                                <input type="text" name="dtdidong" value="" placeholder="0963579744" id="dtdidong" />
+                            </div>
+                            <div class="item-list1">
+                                <label for="dtcodinh">ĐT cố định </label>
+                                <input type="text" name="dtcodinh" value="" placeholder="(764) 749-6478" id="dtcodinh" />
+                            </div>
+                            <div class="item-list1 ">
+                                <label for="email">Email </label>
+                                <input type="text" name="email" value="" placeholder="procuon856@gmail.com" id="email" />
+                            </div>
+                        </li>
+                        <li class="information-list_item cal4">
+                            <div class="item-list1 ">
+                                <label for="tknganhang">Tài khoản ngân hàng </label>
+                                <input type="text" name="tknganhang" value="" placeholder="944147" id="tknganhang" />
+                            </div>
+                            <div class="item-list1">
+                                <label for="tennganhang">Tên ngân hàng </label>
+                                <input type="text" name="tennganhang" value="" placeholder="Ngân hàng Vietcombank" id="tennganhang" />
+                            </div>
+                            <div class="item-list1 ">
+                                <label for="chinhanh">Chi nhánh </label>
+                                <input type="text" name="chinhanh" value="" placeholder="Chi nhánh 6" id="chinhanh" />
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="employeeEnd">
+
+                    <div class="catvaluu">
+                        <div id="huy">Hủy</div>
+                        <div class="cat">
+                            <div id="addd">Cất</div>
+                            <div id="saveofadd">Cất và Thêm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menuAction">
+        <ul class="menu-list ">
+            <li class="menu-list-itemlogo">
+                <div class="menu-list-itemlogo_icon" id="menu-icon">
+                </div>
+            </li>
+            <li class="menu-list-itemTxt">
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon1"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon2"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon3"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon4"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon5"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon6"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon7"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon8"> </div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon9"> </div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon10"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon11"> </div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon12"> </div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon13"></div>
+                </div>
+                <div class="menu-list-item_TXT">
+                    <div id="item-icon14"></div>
+                </div>
+
+
+            </li>
+        </ul>
+    </div>
+    <div class="loadingListApi">
+        <img src="../../img/loading.svg" id="loading__img" />
+    </div>
+
+    <!-- toast Message-->
+
+        <!-- Message notify -->
+        <div id="dlgNotify" class="dialog" >
+            <div id="noti1" class="notify__content">
+                <div class="notify__detail">
+                    <div class="content--circle"></div>
+                    <div class="content--text">Tên không được để trống.</div>
+                </div>
+                <div class="notify__footer">
+                    <button class="btn--green">Đóng</button>
+                </div>
+            </div>
+        </div>
+        <!-- Message notify 2 -->
+        <div id="dlgNotify" class="dialog" >
+            <div id="noti2" class="notify__content--2">
+                <div class="notify__detail">
+                    <div class="content--triangle"></div>
+                    <div class="content--text2">Mã nhân viên ... đã tồn tại trong hệ thống, vui lòng kiểm tra lại.</div>
+                </div>
+                <div class="notify__footer--2">
+                    <button class="btn--green">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+        <!-- Message notify 3 -->
+        <div id="dlgNotify" class="dialog" >
+            <div id="noti3" class="notify__content--2">
+                <div class="notify__detail">
+                    <div class="content--triangle"></div>
+                    <div class="content--text2">Mã nhân viên ... đã tồn tại trong hệ thống, vui lòng kiểm tra lại.</div>
+                </div>
+                <div class="notify__footer--3">
+                    <button class="btn--white">Không</button>
+                    <button class="btn--green">Có</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="../../js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../js/jquery/selectValuesTable.js"></script>
+    <script type="module" src="../../js/employee/employeeCommon.js"></script>
+    <script type="module" src="../../js/employee/employee.js"></script>
+    <script src="../../js/employee/combobox.js"></script>
+</body>
+</html>

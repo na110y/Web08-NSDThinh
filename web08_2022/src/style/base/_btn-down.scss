@@ -1,0 +1,16 @@
+//  btn down search employee
+.employee__listSearch-item {
+  position: relative;
+  #iconPB {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+  }
+  #iconVT {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+  }
+}

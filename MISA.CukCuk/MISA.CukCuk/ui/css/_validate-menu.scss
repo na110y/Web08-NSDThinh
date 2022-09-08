@@ -1,0 +1,327 @@
+﻿@import "_validate-responsive.scss";
+.menu {
+    background-color: #393a3e;
+    width: 200px;
+    height: 100vh;
+    float: left;
+
+    @include deptop1670 {
+        width: 200px;
+    }
+
+    @include deptop1515 {
+        width: 190px;
+    }
+
+/*    @include deptop1100 {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        animation-duration: 2s;
+        background-color: rgba(0, 0, 0, 0.8);
+    }*/
+}
+
+
+.menu-list {
+    &-itemlogo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+
+        @include deptop1670 {
+            padding: 20px 25px;
+        }
+
+        @include deptop1515 {
+            padding: 15px 20px;
+        }
+
+
+        &_icon {
+            position: relative;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+
+            #menu-icon {
+                width: 25px;
+                height: 25px;
+
+
+                @include deptop1670 {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+
+        &_icon::before {
+            content: "";
+            background: url(../../img/Sprites.64af8f61.svg) no-repeat -428px -92px;
+            position: absolute;
+            height: 16px;
+            width: 25px;
+            height: 25px;
+            top: 5px;
+            left: 5px;
+        }
+
+        &_logo {
+            display: flex;
+            align-items: center;
+
+            #menu-logo {
+                width: 40px;
+                height: 40px;
+
+                @include deptop1670 {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+
+            .menu-txt {
+                color: #ffffff;
+                font-family: 'notosans-semibold.df3e6dc4';
+                font-size: 14px;
+                margin-left: 5px;
+
+                @include deptop1670 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    
+    &-itemTxt {
+
+
+        .menu-list-item_TXT {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+
+            @include deptop1670 {
+                padding: 5px 19px;
+            }
+
+            @include deptop1515 {
+                padding: 5px 14px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #58595D;
+            }
+
+
+
+            #item-icon1 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -33px -1630px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -33px -1587px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+
+
+            #item-icon2 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -78px -1631px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -78px -1588px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon3 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -121px -1633px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -121px -1590px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon4 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -165px -1632px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -165px -1632px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon5 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -206px -1631px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -206px -1588px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon6 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -254px -1632px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -254px -1589px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon7 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -294px -1632px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -294px -1589px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon8 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -339px -1633px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -339px -1590px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon9 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -382px -1632px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -382px -1589px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon10 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -427px -1634px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -427px -1591px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon11 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -471px -1633px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -471px -1590px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon12 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -514px -1632px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -514px -1590px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon13 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -552px -1636px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -552px -1593px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #item-icon14 {
+                background: url(../../img/Sprites.64af8f61.svg) no-repeat -207px -1667px;
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    background: url(../../img/Sprites.64af8f61.svg) no-repeat -251px -1667px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .menu-item_txt {
+                color: #ffffff;
+                margin-left: 15px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+.menuAction {
+    display:none;
+    background-color: #393a3e;
+    width: 56px;
+    height: 100vh;
+    float: left;
+
+    .menu-list-itemlogo {
+        padding: 16px;
+    }
+
+    .menu-list-item_TXT{
+        padding:10px 17px;
+    }
+}
+
+.activeClassClick {
+    height: 10px;
+    border-left: 3px solid #2CA01C;
+    background: #58595D;
+    color: #fff;
+    font-family: "googlesans-medium";
+    width:155px;
+    height:20px;
+
+}
+

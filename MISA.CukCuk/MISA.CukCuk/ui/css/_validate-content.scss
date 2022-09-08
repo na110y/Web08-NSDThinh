@@ -1,0 +1,418 @@
+﻿
+.content {
+    float: right;
+    width: calc(100% - 200px);
+    height: 100vh;
+
+}
+/*.contentActive {
+    float: right;
+    width: calc(100% - 56px);
+    height: 100vh;
+}*/
+#iconHeader:hover {
+    cursor: pointer;
+}
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+
+
+
+    &-TXT {
+        display: flex;
+        align-items: center;
+
+        #iconHeader {
+            color: #808080;
+        }
+
+        .content-header_TXT {
+            display: flex;
+            align-items: center;
+
+
+            .content-TXT {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+
+            #dichuyen {
+                width: 15px;
+                height: 10px;
+                margin-left: 5px;
+            }
+        }
+
+
+
+        .content-header_TXT {
+        }
+    }
+
+    &-user {
+        display: flex;
+        align-items: center;
+
+        #chuong {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+
+
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .user-icon {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            #userIcon {
+                width: 25px;
+                height: 26px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .userTXT {
+                display: flex;
+                align-items: center;
+
+                .userTXT-txt {
+                    margin-right: 5px;
+                    font-size: 14px;
+                    font-family: "notosans-bold.3ede5aff";
+                }
+
+                #user-dichuyen {
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+.content-between {
+    padding: 0 20px;
+    background-color: #eee;
+}
+.content-firl {
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+
+
+
+    #employee {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #employee td, #employee th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+
+    #employee tbody tr:hover {
+        background-color: #F2F9FF;
+        cursor: pointer;
+    }
+
+    .actionEdit #editAction {
+
+        &:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    #employee th {
+        background-color: #edeef2;
+        font-size: 13px;
+    }
+}
+.employeee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+
+    .content-between_TXT {
+        font-family: 'notosans-semibold.df3e6dc4';
+        font-size: 24px;
+    }
+
+    .addNV {
+        padding: 9px 24px;
+        background-color: #35BF22;
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 15px;
+
+
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.styleCol {
+    width:200px;
+}
+
+.searchUser {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 18px;
+
+
+
+    .search {
+        position: relative;
+        margin-top: 15px;
+
+        #inputNV {
+            width: 220px;
+            margin-right: 10px;
+
+            &::placeholder {
+                font-family: 'notosans-italic.1c1aaac9';
+            }
+        }
+
+        #searchNV {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            top: 7px;
+            right: 20px;
+
+
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    #rset {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 15px;
+
+
+
+        &:hover {
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition: all 0.5s ease-in;
+        }
+    }
+}
+.checkbox {
+    width:5px;
+}
+
+.content-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px ;
+
+  
+
+
+
+    .total {
+        display: flex;
+        align-items: center;
+
+        &-item2 {
+            font-family: 'notosans-bold.3ede5aff';
+            padding: 0 5px;
+
+           
+        }
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+        &-item1 {
+            padding: 5px 40px 5px 10px;
+            border: 1px solid #bbbbbb;
+            margin-right: 30px;
+
+          
+        }
+
+        &-item2 {
+            color: #c3bfbf;
+            margin-right: 10px;
+
+        }
+
+        &-item3 {
+            padding: 2px 8px;
+            border: 1px solid #d6d1d1;
+            margin-right: 10px;
+
+           
+        }
+
+        &-item4, &-item5, &-item6, &-item7 {
+            padding: 8px;
+
+        }
+
+
+        #endtable {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 13px;
+            left: 200px;
+            cursor:pointer;
+
+          
+        }
+    }
+}
+
+#nhanban {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    margin-right: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+#delete {
+    width: 20px;
+    height: 20px;
+    padding: 4.5px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-right: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+#sua::before {
+    padding: 6px 5px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+/*
+    cắt repon ( màn hình devtop )
+*/
+.employeeTablee {
+    height: 700px;
+    overflow: auto;
+}
+
+.ActionEdit {
+    position: relative;
+
+   
+}
+
+.option-down {
+    display: none;
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    top: 40px;
+    right: 17px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #cfcdcd;
+    color: #333;
+    z-index:1;
+    .btn-coppy {
+        cursor: pointer;
+        margin-bottom: 5px;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: #dbdbdb;
+            color: #2c9f1b;
+        }
+    }
+
+    .btn-delete {
+        cursor: pointer;
+        margin-bottom: 5px;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: #dbdbdb;
+            color: #2c9f1b;
+        }
+    }
+
+    .btn-ngung {
+        cursor: pointer;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: #dbdbdb;
+            color: #2c9f1b;
+        }
+    }
+}
+/* style phân trang*/
+.list-paging {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    background-color: #fff;
+    width: 223px;
+    height: 170px;
+    border-radius: 4px;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+
+    .item-paging {
+        padding: 10px;
+
+        &:hover {
+            background-color: #2c9f1b;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
+.list-number {
+    cursor: pointer;
+}
+.actionEdit {
+    position:relative;
+}

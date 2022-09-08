@@ -1,0 +1,209 @@
+﻿.formadd {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.30);
+    display: none;
+}
+
+.infoTXT {
+    position: fixed;
+    z-index: 1;
+    top: calc(50% - 370px);
+    left: calc(50% - 500px);
+    width: 1000px;
+    height: 710px;
+    background-color: #f6f7f9;
+    border-radius: 4px;
+    display: none;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .NVTXT {
+                font-size: 20px;
+                font-family: 'notosans-bold.3ede5aff';
+            }
+
+            .infoTXT-list_item {
+                margin-left: 10px;
+            }
+        }
+
+        .close {
+            #iconhoi {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+
+            #iconClose {
+                width: 20px;
+                height: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .information-list_item {
+        margin-bottom: 15px;
+
+        .itemdonvi {
+            position: relative;
+        }
+
+        .itemngaycap {
+            position: relative;
+
+            #datet {
+                position: absolute;
+                top: 37px;
+                right: 13px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        .item-list1 {
+            padding-left: 20px;
+
+            #donvi1 {
+                width: 410px;
+            }
+
+            #donvi {
+                position: absolute;
+                top: 39px;
+                right: 15px;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        #cmnd {
+            width: 210px;
+        }
+
+        #ngaycap {
+            width: 150px;
+        }
+
+        #chucdanh {
+            width: 410px;
+        }
+
+        #noicap {
+            width: 414px;
+        }
+    }
+
+    .col2 {
+        margin-bottom: 30px;
+    }
+}
+
+.infoTXT-list {
+    display: flex;
+    align-items: center;
+}
+
+.information {
+    margin-top: 20px;
+}
+.information-list_item {
+    display: flex;
+    align-items: center;
+
+    .item-list {
+        padding-left: 20px;
+    }
+
+    .item-list-col {
+        display: flex;
+        align-items: center;
+        .itemm {
+            padding:0 10px;
+        }
+    }
+}
+
+.col3 {
+    #diachi {
+        width:877px;
+    }
+}
+
+.employeeEnd {
+    margin-top: 40px;
+    width: 955px;
+    margin-left: 20px;
+    border-top: 1px solid #808080;
+
+    .catvaluu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #huy {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: 1px solid #bbbbbb;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+
+        .cat {
+            display: flex;
+            align-items: center;
+
+            #addd {
+                margin-top: 20px;
+                padding: 10px 20px;
+                border-radius: 4px;
+                border: 1px solid #bbbbbb;
+                margin-right: 30px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #000000;
+                    color: #fff;
+                }
+            }
+
+            #saveofadd {
+                margin-top: 20px;
+                padding: 10px 20px;
+                border-radius: 4px;
+                border: 1px solid #2e9d1e;
+                background-color: #2e9d1e;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #000000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
