@@ -2,11 +2,26 @@
 @import "./rebonsit";
 @import "./theMenu";
 @import "./theHeader";
-@import "./theNavbar";
 @import "./commom";
 @import "../base/btn-add";
 @import "../base/btn-toggle";
-@import "../employee/employee";
-@import "../base/btn-refresh";
 @import "../base/input-search";
 @import "../base/btn-down";
+@import "../base/toastMes";
+@import "../base/btn-refresh";
+@import "../employee/employeeDetail";
+@import "../base/btn-checkbox";
+@import "../base/loading";
+@import "../base/optionSelectEdit";
+@import "../base/btn-radio";
+@import "../base/combobox";
+@import "../base/btn-dropdown";
+@import "../base/toastMes";
+@import "../base/paging";
+@import "../../style/employee/employee";
+
+.StyleCombobox .listPosison {
+  width: 442px;
+  background-color: #fff;
+  color: #000;
+}

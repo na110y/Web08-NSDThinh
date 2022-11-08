@@ -7,8 +7,12 @@
 }
 input {
   outline: none;
-  border: none;
-  height: 40px;
+  height: 38px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 16px;
+  font-family: "googlesans-light";
 }
 button {
   outline: none;
@@ -20,4 +24,8 @@ a {
 }
 li {
   list-style: none;
+}
+
+.validateInput {
+  border-color: #ff4747 !important;
 }

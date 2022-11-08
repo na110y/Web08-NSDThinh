@@ -1,7 +1,7 @@
 // employee refresh
 // author: Nguyễn Sỹ Đức Thịnh ( 29/08/2022 )
 
-.employee__refresh {
+.employee__listSearch {
   #employee__refresh {
     position: relative;
     width: 24px;
@@ -12,10 +12,7 @@
   #employee__refresh::before {
     position: absolute;
     content: "";
-    top: 2px;
-    left: 10px;
     width: 24px;
     height: 24px;
-    // background: url(../../pages/img/Sprites.64af8f61.svg) no-repeat -428px -92px;
   }
 }

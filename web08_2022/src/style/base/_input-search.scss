@@ -1,14 +1,15 @@
 // employee search
 // author: Nguyễn Sỹ Đức Thịnh ( 29/08/2022 )
 .content__employee-search {
-  display: flex;
-  align-items: center;
   margin-top: 10px;
-  float: right;
+
   .employee__listSearch {
     display: flex;
     align-items: center;
-
+    justify-content: end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
     &-item {
       position: relative;
       border: 1px solid #e1dddd;
@@ -16,14 +17,15 @@
       align-items: center;
       margin-right: 10px;
       #search-manv {
-        width: 260px;
-        margin-right: 10px;
-        padding-left: 38px;
+        width: 280px;
+        font-family: "googlesans-italic";
+        font-size: 13px;
       }
       #search {
         position: absolute;
         top: 12px;
-        left: 16px;
+        right: 16px;
+        cursor: pointer;
       }
       input {
         height: 40px;

@@ -1,0 +1,47 @@
+.actionEdit {
+  position: relative;
+}
+
+.option-down {
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  top: 20px;
+  right: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #cfcdcd;
+  color: #333;
+  z-index: 1;
+  .btn-coppy {
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: #dbdbdb;
+      color: #2c9f1b;
+    }
+  }
+
+  .btn-delete {
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: #dbdbdb;
+      color: #2c9f1b;
+    }
+  }
+
+  .btn-ngung {
+    cursor: pointer;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: #dbdbdb;
+      color: #2c9f1b;
+    }
+  }
+}

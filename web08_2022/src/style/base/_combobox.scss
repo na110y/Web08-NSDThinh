@@ -1,0 +1,40 @@
+.listPosison {
+  bottom: 40px;
+  background-color: #fff;
+  width: 223px;
+  cursor: pointer;
+}
+
+.combobox__Posison {
+  position: relative;
+
+  .listPosison {
+    background-color: #fff;
+    width: 420px;
+    cursor: pointer;
+    color: #333;
+    top: 75px;
+    padding: 10px;
+  }
+}
+.StyleCombobox {
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #dad6d6;
+  border-radius: 4px;
+  margin-top: 5px;
+  .listPosison {
+    width: 444px;
+    background-color: #fff;
+    color: #000;
+    &:hover {
+      background-color: #019160;
+      color: #fff;
+    }
+    .listItem {
+      padding: 10px;
+    }
+  }
+}

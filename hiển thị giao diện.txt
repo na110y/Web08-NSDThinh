@@ -1,0 +1,45 @@
+
+
+        try {
+            // Gọi api thực hiện lấy dữ liệu:
+            fetch("https://localhost:44395/employees", { method: "GET" })
+                .then(res => res.json())
+                .then(res => {
+                    console.log(res);
+
+                    // Clear dữ liệu cũ: 
+                    $("table#employee tbody").empty();
+                    // Lấy thông tin các cột dữ liệu của bảng:
+                    var ths = $("table#employee thead th");
+                    for (const emp of res) {
+                        var employeeList = $(`<tr></tr>`);
+                        for (const th of ths) {
+                            // Lấy ra thông tin propName:
+                            const propName = $(th).attr("prop-name");
+                            // Lấy ra value:
+                            let value = emp[propName];
+                            const formatDate = th.hasAttribute("format-date");
+                            const formatMoney = th.hasAttribute("format-money");
+                            if (formatDate)
+                                value = common.formatDate(value);
+
+                            if (formatMoney)
+                                value = common.formatMoneyVND(value);
+
+                            var td = `<td>${value || ""}</td>`
+                            employeeList.append(td);
+                        }
+                        employeeList.data("id", emp.EmployeeId);
+                        employeeList.data("entity", emp);
+                        $("table#employee tbody").append(employeeList);
+
+                    }
+
+                })
+                .catch(res => {
+
+                })
+
+        } catch (error) {
+            console.log(error);
+        }

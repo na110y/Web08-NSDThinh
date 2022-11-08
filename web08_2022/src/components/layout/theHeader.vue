@@ -2,9 +2,11 @@
   <header>
     <div class="header">
       <div class="header__dropdown">
+        <div class="header__dropdown-icon1"></div>
         <div class="header__dropdown-txt">
           CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC
         </div>
+        <div class="header__dropdown-icon2"></div>
       </div>
 
       <div class="header__user">

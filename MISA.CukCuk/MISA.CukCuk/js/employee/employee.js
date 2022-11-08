@@ -32,16 +32,11 @@ let employeeNew = {
                             checkGender = 'Khác';
                             break;
                     }
-
-
-
                     /*  khởi tạo giá trị datetime và bỏ múi giờ từ api trả về*/
 
                     var yourDate = new Date(item.DateOfBirth);
                     var yourDate = item.DateOfBirth;
                     var dateOfBirth = yourDate.split('T')[0].split("-").reverse().join("-");
-
-
 
                     /*khởi tạo giá trị truyền vào nếu ko truyền giá trị gì thì trả về rỗng*/
 
@@ -398,6 +393,7 @@ class EmplogyeeJS {
                 }).done(function (res = true) {
 
                     self.loadData();
+                    $('input').val(null);
                     self.FormMode = null;
                 }).fail(function (res) {
                     /* kiểm tra xem mã nhân viên đã tồn tại hay chưa */
@@ -495,9 +491,10 @@ class EmplogyeeJS {
                 }).fail(function (res) {
                     /* kiểm tra xem mã nhân viên đã tồn tại hay chưa */
                     if ($("#manv").val()) {
-                        $('.notify__content').show();
+/*                        $('.notify__content').show();*/
                         let nvFail = employee.EmployeeCode;
-   
+
+                      
                         alert("Mã nhân viên" + ' ' + '<' + nvFail + '>' + " đã tồn tại trong hệ thống, vui lòng kiểm tra lại");
                     }
 

@@ -1,0 +1,22 @@
+.actionEdit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #delEmployee {
+    width: 10px;
+    height: 10px;
+    color: #2187c8;
+  }
+  #editAction {
+    color: #2187c8;
+  }
+}
+
+.optionSelect {
+  // display: none;
+  .selectItem {
+  }
+}
+.editAction {
+  margin-right: 10px;
+}

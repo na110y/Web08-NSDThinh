@@ -2,17 +2,17 @@
   <div>
     <the-menu />
     <the-header />
-    <the-content />
     <router-view />
+    <the-content />
   </div>
 </template>
 
 <script>
 import theHeader from "@/components/layout/theHeader.vue";
 import theMenu from "@/components/layout/theMenu.vue";
-import theContent from "@/components/layout/theContent.vue";
+import TheContent from "./components/layout/theContent.vue";
 export default {
-  components: { theHeader, theMenu, theContent },
+  components: { theHeader, theMenu, TheContent },
 };
 </script>
 

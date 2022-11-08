@@ -1,11 +1,9 @@
 <template>
-  <div class="zxc"></div>
+  <div></div>
 </template>
 
 <script>
-export default {
-  name: "the-content",
-};
+export default {};
 </script>
 
 <style></style>
