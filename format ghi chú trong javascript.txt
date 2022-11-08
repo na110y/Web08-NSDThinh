@@ -1,0 +1,12 @@
+  "CommentNoReturn": {
+    "scope": "javascript,typescript,html,vue",
+    "prefix": "///",
+    "body": [
+      "/**",
+      " * @description: ",
+      " * @param {Object} ",
+      " * Author: NSDThinh $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR",
+      " */"
+    ],
+    "description": "Comment"
+  }

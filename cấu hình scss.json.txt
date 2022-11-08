@@ -1,0 +1,20 @@
+  "center flexbox": {
+    "prefix": "center",
+    "body": [
+      "    display: flex;",
+      "    justify-content: space-between;",
+      "    align-items: center;"
+    ],
+    "description": "center flexbox"
+  },
+  "CommentNoReturn": {
+    "prefix": "///",
+    "body": [
+      "/**",
+      " * @description: $1",
+      " * @param: {${2:any}} $3",
+      " * Author: NSDThinh $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR",
+      " */"
+    ],
+    "description": "Comment"
+  }
